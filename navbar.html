@@ -11,11 +11,25 @@
     <div id="navbar">
         <div id="rebok">Rebok</div>
         <div id="navbarIn">
-            <div><a href="mens.html">men</a></div>
-            <div><a href="womens.html">women</a></div>
+            <div><a onclick="showFunc()">men</a></div>
+            <div><a onclick="showFunc()">women</a></div>
             <div><a href="login.html">login</a></div>
             <div><a href="signup.html">signup</a></div>
         </div>
     </div>
 </body>
 </html>
+<script>
+    function showFunc() {
+//   var txt;
+  if (confirm("Please Signup Or Login")) {
+    // txt = "You pressed OK!";
+    window.location.href="/E-Commerce-1-Assignment/signup.html"
+  }
+//   } else {
+    // txt = "You pressed Cancel!";
+
+//   }
+//   document.getElementById("demo").innerHTML = txt;
+}
+</script>
